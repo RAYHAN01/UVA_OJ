@@ -80,9 +80,10 @@ void opline() {
 }
 
 int main() {
-	int intotal,optotal, index = 0;
+	int intotal, optotal, index = 0;
 	while(scanf("%d%d", &r, &c) == 2 && r) {
 		scanf("%d", &intotal);
+		if (index) printf("\n");
 		printf("Spreadsheet #%d\n", ++index);
 		for (in_curr = 1; in_curr <= intotal; in_curr++) {
 			readline();
